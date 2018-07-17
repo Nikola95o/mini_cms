@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.cf:after,.cf:before{
+	display:table;
+	content:"";
+}
+.cf:after{
+	clear:both;
+}
+.cf{
+	zoom: 1;
+}
+
+#wrapper {
+	width:950px;
+	padding:15px;
+	margin:0 auto;
+	background-color:#FFFFFF;
+	box-shadow:0 2px 5px #555555;
+}
+
+/* HEADER */
+#mainHeader{
+	background:#C51417;
+	margin-bottom:15px;
+	padding:20px;
+	overflow:hidden;
+	color: #FFF;
+}
+#title{
+	display: block;
+	float: left;
+}
+#msg{
+	display: block;
+	float: right;
+	font-weight: bold;
+	margin: auto;
+}
+/* END HEADER */
+
+/* NAVIGATION */
+#mainNav{
+	height:40px;
+	background:#534741;
+	margin-bottom:15px;
+}
+#mainNav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#mainNav ul li{
+	float:left;
+	position: relative;
+}
+#mainNav ul li a{
+	padding:10px;
+	height:20px;
+	line-height: 20px;
+	display: block;
+	transition: 0.5s all ease;
+}
+#mainNav ul li a:link,
+#mainNav ul li a:visited {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+#mainNav ul li a:hover {
+	color:#FFFFFF;
+	background:#C51417;
+}
+#mainNav ul li a:active {
+	color:#333333;
+	background:#CCCCCC;
+}
+
+#mainNav ul li ul {
+	background:rgba(55,55,55,0.6);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width:240px;
+	display: none; /* u startu */
+}
+#mainNav ul li ul li {
+	float: none;
+}
+#mainNav ul li:hover > ul {
+	display: block;
+}
+
+#mainNav ul li ul li ul {
+	left: 100%;
+	top: 0;
+}
+/* END NAVIGATION */
+
+/* CONTENT */
+
+/* NEWS */
+.newsBox{
+	border: 5px solid #C51417;
+	padding: 20px;
+	margin: 30px auto;
+	width: 900px;
+	background: #F4F4F4;
+}
+.newsTitle{
+	background:#BBB;
+	background-attachment: fixed;
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.newsTitle h2{
+	display: block;
+	float: left;
+	width: 725px;
+	padding-left: 25px;
+	margin: 0;
+	line-height: 30px;
+}
+.newsTitle .removeForm{
+	display: block;
+	float: right;
+	width: 125px;
+	padding-right: 25px;
+	margin: 0;
+}
+.newsTitle .removeForm *{
+	float: right;
+	height: 30px;
+}
+
+
+/* COMMENTS */
+.commentBox{
+	background: #FFF;
+}
+
+
+
+/* END CONTENT */
+
+
+
+/* ADD NEWS */
+form.addNews textarea{
+	width: 940px;
+	resize: none;
+}
+form.addNews input[name="title"]{
+	width: 940px;
+}
+form.addNews input[type="submit"]{
+	padding: 20px;
+	width: 100px;
+	display: block;
+	margin: 20px auto;
+}
